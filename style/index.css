@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: black;
+    align-items: center;
+    font: 11pt arial;
+    border-bottom: solid 1px white;
+}
+.corpo h2{
+    padding-top: 35px ;
+}
+header input[type="checkbox"]{
+    display: none;
+}
+.head_dir{
+    position: absolute;
+    right: 70px;
+}
+.head_dir a {
+    padding: 8px;
+    color: white;
+    font: 15pt arial;
+}
+
+.head_dir a:hover {
+    background-color: #da9e08;
+    color: white;
+}
+
+body {
+    background-color: #232323;
+    
+}
+
+.corpo {
+    background-color: #232323;
+    margin: auto;
+    text-align: center;
+}
+
+.itens {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.itens img {
+    border-radius: 10px;
+}
+
+.itens a {
+    width: 189px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+.itens a:hover {
+    transform: scale(1.20, 1.20);
+    transition: 400ms;
+}
+.painel-esq {
+    position: fixed;
+    height: 100%;
+    width: 22%;
+    background: black;
+    border:solid 1px white;
+    top: 0px;
+}
+.negativo{
+    right: -23%;
+    transition: .4s;
+}
+.positivo{
+    right: 0;
+    transition: .4s;
+}
+.filtros{
+    margin-top: 80px;
+}
+.filtros li{
+    width: 100%;
+    padding: 15px;
+    font: 15pt arial;
+}
+.filtros h2{
+    text-align: center;
+    padding: 10px;
+}
+.filtros li:hover{
+    background-color: #da9e08;
+}
+input {
+    background: none;
+    color: white;
+    border: none;
+    padding: 8px;
+    font: 15pt arial;
+}
+
+label {
+    position: fixed;
+    right: 10px;
+    padding: 15px;
+    z-index: 1;
+}
+label img{
+    width: 30px;
+}
