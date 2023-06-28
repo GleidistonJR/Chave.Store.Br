@@ -1,37 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- inicia dizendo que é um arquivo html, assim o navegador sabera doque se trata-->
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=+-, initial-scale=1.0">
-    <title>Chave Store</title>
-    <link rel="icon" href="imgs/Logo Oficial Chave Store Redonda.png">
-    <link rel="stylesheet" href="style/index.css">
+    <title>Chave Store</title> <!-- Titulo que aparecera na aba da pagina -->
+    <link rel="icon" href="imgs/Logo Oficial Chave Store Redonda.png"> <!-- icone da aba-->
+    <link rel="stylesheet" href="style/index.css"> <!--link do documento de estilo-->
 </head>
 
 <body>
-    <header id="header">
+    <header id="header"> <!--Isto e o cabeçalho da pagina, onde esta os links-->
         <div class="head_esq">
             <img src="imgs/Chave.png" alt="Logo Chave Store" height="80px">
         </div>
 
-        <nav class="head_dir">
+        <nav class="head_dir"> <!-- Esta divido entre a logo na esquerda e os links a direita-->
             <a href="#catalogo">Catalogo</a>
             <a href="#promocao">Promoções</a>
             <a href="#contatos">Contatos</a>
         </nav>
 
-        <input type="checkbox" id="chec">
+        <input type="checkbox" id="chec"> <!-- checkbox para ativação da barra lateral de links-->
         <label for="chec" id="imgBarras">
             <img src="imgs/x.png" alt="mais">
         </label>
     </header>
 
+    <nav class="painel-dir negativo" id="painel-dir"> <!-- Barra Lateral-->
+        <ul class="filtros">
+            <h2>Filtros</h2>
+            <div id="BotoesFiltros">
+                <a href="#header">
+                    <li>Pagina Inicial</li>
+                </a>
+                <a href="#">
+                    <li>Camisetas</li>
+                </a>
+                <a href="#">
+                    <li>Bermudas</li>
+                </a>
+                <a href="#">
+                    <li>Bonés</li>
+                </a>
+                <a href="#promocao">
+                    <li>Promoções</li>
+                </a>
+                <a href="#Novidades">
+                    <li>Novidades</li>
+                </a>
+            </div>
+        </ul>
+
+    </nav>
+
     <div class="corpo" id="corpo">
-        <div class="promocao" id="promocao">
+        <div class="promocao" id="promocao"> <!-- Seçao em PROMOÇÃO-->
             <h2>Camisetas em Promoção!!!</h2>
-            <div class="itens">
+            <div class="itensPromocao">
                 <a href="#"><img src="imgs/Camiseta1.jpg" alt="Camiseta" height="250px">
                     <h4>Camiseta Premium lacoste</h4>
                 </a>
@@ -63,23 +90,29 @@
                 <a href="#"><img src="imgs/Camiseta8.jpg" alt="Camiseta" height="250px">
                     <h4>Camiseta Premium Vans</h4>
                 </a>
+
+                <a href="#"><img src="imgs/Camiseta1.jpg" alt="Camiseta" height="250px">
+                    <h4>Camiseta Premium lacoste</h4>
+                </a>
+
+                <a href="#"><img src="imgs/Camiseta2.jpg" alt="Camiseta" height="250px">
+                    <h4>Camiseta Premium Nike</h4>
+                </a>
+            </div>
+        </div>
+
+        <div id="Novidades" class="Novidades"> <!-- Seçao de NOVIDADES-->
+            <h2>Novidades Em Nossa Loja</h2>
+            <div class="NovidadesItens">
+                <a href=""><img src="/imgs/Bermudas/Bermuda 02a.jpg" alt="img bermuda" height="350px"></a>
+                <a href=""><img src="/imgs/Bermudas/Bermuda 05a.jpg" alt="img bermuda" height="350px"></a>
+                <a href=""><img src="/imgs/Bermudas/Bermuda 01b.jpg" alt="img bermuda" height="350px"></a>
+                <a href=""><img src="/imgs/Bermudas/Bermuda 04a.jpg" alt="img bermuda" height="350px"></a>
             </div>
         </div>
 
     </div>
-    <nav class="painel-esq negativo" id="painel-esq">
-        <ul class="filtros">
-            <h2>Filtros</h2>
-            <div id="BotoesFiltros">
-            <a href="#header" class="linkFiltro"><li>Pagina Inicial</li></a>
-            <a href="#" class="linkFiltro"><li>Camisetas</li></a>
-            <a href="#" class="linkFiltro"><li>Bermudas</li></a>
-            <a href="#" class="linkFiltro"><li>Bonés</li></a>
-            <a href="#promocao" class="linkFiltro"><li>Promoções</li></a>
-            </div>
-        </ul>
 
-    </nav>
     <script src="script/node.js"></script>
 </body>
 

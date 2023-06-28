@@ -1,3 +1,5 @@
+/*Formataçao geral do documento*/
+    
 * {
     padding: 0px;
     margin: 0px;
@@ -6,6 +8,13 @@
     color: white;
     list-style: none;
 }
+
+body {
+    background-color: #232323;
+
+}
+
+/*HEADER*/
 
 header {
     display: flex;
@@ -16,16 +25,16 @@ header {
     font: 11pt arial;
     border-bottom: solid 1px white;
 }
-.corpo h2{
-    padding-top: 35px ;
-}
-header input[type="checkbox"]{
+
+header input[type="checkbox"] {
     display: none;
 }
-.head_dir{
+
+.head_dir {
     position: absolute;
     right: 70px;
 }
+
 .head_dir a {
     padding: 8px;
     color: white;
@@ -37,9 +46,10 @@ header input[type="checkbox"]{
     color: white;
 }
 
-body {
-    background-color: #232323;
-    
+/*CORPO*/
+
+.corpo {
+    padding: 35px 0px;
 }
 
 .corpo {
@@ -48,75 +58,116 @@ body {
     text-align: center;
 }
 
-.itens {
+/*PROMOÇAO*/
+
+.promocao h2{
+    font-size: 24pt;
+}
+
+.itensPromocao {
     display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
     padding: 20px;
     flex-wrap: wrap;
 }
 
-.itens img {
+.itensPromocao img {
     border-radius: 10px;
 }
 
-.itens a {
+.itensPromocao a {
     width: 189px;
     padding: 10px;
     transition: 400ms;
 }
 
-.itens a:hover {
+.itensPromocao a:hover {
     transform: scale(1.20, 1.20);
     transition: 400ms;
 }
-.painel-esq {
+
+/*PAINEL DIREITO*/
+
+.painel-dir {
     position: fixed;
     height: 100%;
     width: 22%;
     background: black;
-    border:solid 1px white;
+    border: solid 1px white;
     top: 0px;
 }
-.negativo{
+
+.negativo {
     right: -23%;
     transition: .4s;
 }
-.positivo{
+
+.positivo {
     right: 0;
     transition: .4s;
 }
-.filtros{
+
+.filtros {
     margin-top: 80px;
 }
-.filtros li{
+
+.filtros li {
     width: 100%;
     padding: 15px;
     font: 15pt arial;
 }
-.filtros h2{
+
+.filtros h2 {
     text-align: center;
     padding: 10px;
 }
-.filtros li:hover{
+
+.filtros li:hover {
     background-color: #da9e08;
 }
+/*
 input {
     background: none;
     color: white;
     border: none;
     padding: 8px;
     font: 15pt arial;
-}
+}*/
 
-label {
+#imgBarras {
     position: fixed;
     right: 10px;
     padding: 15px;
     z-index: 1;
 }
-label img{
+
+#imgBarras img {
     width: 30px;
+}
+
+
+/*Novidades!!!*/
+
+.Novidades{
+    margin: 35px 0px;
+}
+.Novidades h2 {
+    font-size: 24pt;
+    margin-bottom: 20px;
+}
+.NovidadesItens{
+    display: flex;
+    width: 80%;
+    margin:auto;
+}
+
+.NovidadesItens a{
+    margin: 10px;
+}
+
+.NovidadesItens a img{
+    border-radius: 10px;
 }

@@ -6,7 +6,7 @@ var cheqbox = document.querySelector('#chec') //variavel para checar se checkbox
 
 function painelEsq() {  //funçao "painelEsc"
 
-    let painel = document.querySelector('#painel-esq')
+    let painel = document.querySelector('#painel-dir')
 
     if (cheqbox.checked) {  //se checkbox estiver habilitada atribui class ao elemento painel
         painel.classList.remove('positivo') //isso fara ele aparecer na tela
@@ -25,7 +25,7 @@ botaoFiltro.addEventListener('click', RemoverCheck)     // o painel esconde-se n
 function RemoverCheck(){
    cheqbox.checked = false
 
-   let painel = document.querySelector('#painel-esq')
+   let painel = document.querySelector('#painel-dir')
     painel.classList.remove('positivo') //caso desabilitado remove class
     painel.classList.add('negativo')  //e fara o painel se esconder a direita!
 
